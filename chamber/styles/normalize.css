@@ -1,0 +1,25 @@
+/* Base css for styling common elements */
+.site-name{
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: xx-large;
+}
+
+.filters{
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* center footer elements */
+footer{
+  text-align: center;
+}
+
+.social{
+  margin: 0px auto;
+  width: fit-content;
+}

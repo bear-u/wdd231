@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Tech Solutions Inc.",
+    "address": "123 Innovation Way, City, ST",
+    "phone": "(555) 010-1234",
+    "website": "https://example.com",
+    "image": "tech-solutions.webp",
+    "membershipLevel": 3,
+    "other": "IT Support & Consulting"
+  },
+  {
+    "name": "Green Gardens Landscaping",
+    "address": "456 Green St, City, ST",
+    "phone": "(555) 010-5678",
+    "website": "https://greengardens.com",
+    "image": "green-gardens.webp",
+    "membershipLevel": 2,
+    "other": "Landscaping Services"
+  },
+  {
+    "name": "Healthy Bites Cafe",
+    "address": "789 Healthy Ave, City, ST",
+    "phone": "(555) 010-9012",
+    "website": "https://healthybitescafe.com",
+    "image": "healthy-bites.webp",
+    "membershipLevel": 1,
+    "other": "Organic Cafe"
+  },
+  {
+    "name": "Bright Future Tutoring",
+    "address": "321 Learning Ln, City, ST",
+    "phone": "(555) 010-3456",
+    "website": "https://brightfuture.com",
+    "image": "bright-future.webp",
+    "membershipLevel": 2,
+    "other": "Educational Tutoring Services"
+  },
+  {
+    "name": "Urban Fitness Gym",
+    "address": "654 Workout Rd, City, ST",
+    "phone": "(555) 010-7890",
+    "website": "https://urbanfitness.com",
+    "image": "urban-fitness.webp",
+    "membershipLevel": 3,
+    "other": "Fitness & Wellness Center"
+  },
+  {
+    "name": "Creative Minds Design",
+    "address": "987 Art Blvd, City, ST",
+    "phone": "(555) 010-2345",
+    "website": "https://creativemindsdesign.com",
+    "image": "creative-minds.webp",
+    "membershipLevel": 1,
+    "other": "Graphic Design Services"
+  },
+  {
+    "name": "Sunshine Travel Agency",
+    "address": "159 Vacation St, City, ST",
+    "phone": "(555) 010-6789",
+    "website": "https://sunshinetravel.com",
+    "image": "sunshine-travel.webp",
+    "membershipLevel": 2,
+    "other": "Travel & Tourism Services"
+  },
+  {
+    "name": "Fresh Market Grocery",
+    "address": "753 Healthy Way, City, ST",
+    "phone": "(555) 010-1122",
+    "website": "https://freshmarket.com",
+    "image": "fresh-market.webp",
+    "membershipLevel": 3,
+    "other": "Grocery Store"
+  }
+]
