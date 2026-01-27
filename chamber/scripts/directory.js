@@ -10,17 +10,21 @@ async function getMembers() {
 }
 
 function displayMembers(members) {
-  container.innerHTML = ""; // Clear existing content
+  container.innerHTML = "";
+
   members.forEach(member => {
-      let card = document.createElement('section');
-      card.innerHTML = `
-          <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
-          <h3>${member.name}</h3>
-          <p>${member.address}</p>
-          <p>${member.phone}</p>
-          <a href="${member.website}" target="_blank">Visit Website</a>
-      `;
-      container.appendChild(card);
+    const card = document.createElement('section');
+    card.classList.add('card');
+
+    card.innerHTML = `
+      <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
+      <h3>${member.name}</h3>
+      <p><i class="bi bi-geo-alt"></i> ${member.address}</p>
+      <p><i class="bi bi-telephone"></i> ${member.phone}</p>
+      <a href="${member.website}" target="_blank">Visit Website</a>
+    `;
+
+    container.appendChild(card);
   });
 }
 

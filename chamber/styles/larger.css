@@ -26,26 +26,4 @@
   main {
     padding: 0 1.25rem;
   }
-
-  .courses-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1000px) {
-  .site-header {
-    padding: 1rem 2rem;
-  }
-
-  main {
-    max-width: 1200px;
-  }
-
-  .courses-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .card {
-    padding: 1.25rem;
-  }
 }

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Moio's Chamber of Commerce</title>
+  <meta name="description" content="Studio Moio's Chamber of Commerce — Supporting local businesses and growth.">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+</head>
+
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img class="logo" src="images/icon_main.png" alt="Logo" width="30">
+    <span class="site-name">Studio Moio's Chamber of Commerce</span>
+  </a>
+
+  <button id="menu-toggle" class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+  <nav id="primary-nav" class="nav" aria-label="Primary">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="https://bear-u.github.io/wdd231/chamber/" aria-current="page">Chamber</a></li>
+    <li><a href="https://bear-u.github.io/wdd231/final/">Final</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero card">
+    <img src="images/hero.webp" alt="City skyline">
+    <div class="hero-content">
+      <h1>Building Stronger Businesses Together</h1>
+      <a href="join.html" class="cta-btn">Join the Chamber</a>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="card">
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li>Business Networking Night — Feb 10</li>
+      <li>Local Vendor Expo — Feb 18</li>
+      <li>Startup Funding Workshop — Feb 27</li>
+    </ul>
+  </section>
+
+  <!-- WEATHER -->
+  <section class="card weather">
+    <h2>Local Weather</h2>
+    <p><strong>Temperature:</strong> <span id="current-temp"></span></p>
+    <p><strong>Conditions:</strong> <span id="weather-desc"></span></p>
+    <div id="forecast"></div>
+  </section>
+
+  <!-- SPOTLIGHTS -->
+  <section class="card">
+    <h2>Business Spotlights</h2>
+    <div id="spotlights" class="grid">
+      <!-- Spotlights will be injected here -->
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span id="copyright-year"></span> • Joshua O. Obodo
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
