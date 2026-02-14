@@ -1,0 +1,16 @@
+[
+  {"id": 1,"title": "Stellar Drift","genre": "Sci-Fi Action","platform": "PC","status": "In Development","image": "images/stellar.webp","description": "Pilot advanced starships across collapsing galaxies in this high-speed combat adventure."},
+  { "id":2,"title":"Echo Realm","genre":"RPG","platform":"PC","status":"In Development","image":"images/echo.webp","description":"Fantasy role-playing experience."},
+  { "id":3,"title":"Neon Pulse","genre":"Action","platform":"PC","status":"Prototype","image":"images/neon.webp","description":"Cyberpunk action game."},
+  { "id":4,"title":"Skybound","genre":"Adventure","platform":"PC","status":"In Development","image":"images/skybound.webp","description":"Airship exploration journey."},
+  { "id":5,"title":"Shadow Grid","genre":"Strategy","platform":"PC","status":"In Development","image":"images/shadow.webp","description":"Tactical grid combat."},
+  { "id":6,"title":"Quantum Run","genre":"Runner","platform":"Mobile","status":"Released","image":"images/quantum.webp","description":"Fast-paced reflex game."},
+  { "id":7,"title":"Forge Legends","genre":"RPG","platform":"PC","status":"Concept","image":"images/forge.webp","description":"Epic forging saga."},
+  { "id":8,"title":"Nova Arena","genre":"Multiplayer","platform":"PC","status":"Prototype","image":"images/nova.webp","description":"Competitive arena battles."},
+  { "id":9,"title":"Pixel Frontier","genre":"Indie","platform":"PC","status":"Released","image":"images/pixel.webp","description":"Retro survival game."},
+  { "id":10,"title":"Aetherfall","genre":"Adventure","platform":"PC","status":"In Development","image":"images/aetherfall.webp","description":"Mystical world exploration."},
+  { "id":11,"title":"Core Collapse","genre":"Action","platform":"PC","status":"Concept","image":"images/core.webp","description":"High-energy destruction."},
+  { "id":12,"title":"Silent Orbit","genre":"Sci-Fi","platform":"PC","status":"In Development","image":"images/silent.webp","description":"Deep space narrative."},
+  { "id":13,"title":"Crystal Tides","genre":"Fantasy","platform":"PC","status":"Prototype","image":"images/crystal.webp", "description": "Oceanic magic quest."},
+  { "id":14,"title": "Iron Horizon", "genre": "Strategy", "platform": "PC", "status": "Concept", "image": "images/ironhorizon.webp", "description": "Industrial war strategy."}
+]
