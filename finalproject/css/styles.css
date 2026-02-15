@@ -110,7 +110,6 @@ header {
   align-items: center;
 }
 
-
 .nav-links a:hover {
   color: var(--accent);
 }
@@ -432,16 +431,38 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-  }
+    .nav-links {
+    /* position: relative; */
+    top: 80px;
+    right: 8%;
+    flex-direction: column;
+    background: var(--card);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px var(--shadow);
+    gap: 20px;
+    display: none;
+    width: 100%;
+    }
 
-  .hero h1 {
-    font-size: 2rem;
-  }
+    .nav-links.active {
+    display: flex;
+    }
 
-  .nav-links {
-    gap: 16px;
-  }
+    .menu-toggle {
+    display: block;
+    }
+    .nav-links {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    }
+
+    .nav-links.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    }
 }
 

@@ -10,7 +10,5 @@
   { "id":9,"title":"Pixel Frontier","genre":"Indie","platform":"PC","status":"Released","image":"images/pixel.webp","description":"Retro survival game."},
   { "id":10,"title":"Aetherfall","genre":"Adventure","platform":"PC","status":"In Development","image":"images/aetherfall.webp","description":"Mystical world exploration."},
   { "id":11,"title":"Core Collapse","genre":"Action","platform":"PC","status":"Concept","image":"images/core.webp","description":"High-energy destruction."},
-  { "id":12,"title":"Silent Orbit","genre":"Sci-Fi","platform":"PC","status":"In Development","image":"images/silent.webp","description":"Deep space narrative."},
-  { "id":13,"title":"Crystal Tides","genre":"Fantasy","platform":"PC","status":"Prototype","image":"images/crystal.webp", "description": "Oceanic magic quest."},
-  { "id":14,"title": "Iron Horizon", "genre": "Strategy", "platform": "PC", "status": "Concept", "image": "images/ironhorizon.webp", "description": "Industrial war strategy."}
+  { "id":12,"title":"Silent Orbit","genre":"Sci-Fi","platform":"PC","status":"In Development","image":"images/silent.webp","description":"Deep space narrative."}
 ]

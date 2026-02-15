@@ -3,6 +3,14 @@ const themeBtn = document.querySelector("#themeToggle");
 
 const heroImg = document.querySelector(".hero-img");
 
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+
 window.addEventListener("scroll", () => {
     if (heroImg) {
         const offset = window.scrollY * 0.4;
