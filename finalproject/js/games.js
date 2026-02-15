@@ -1,41 +1,22 @@
 const container = document.querySelector("#games-container");
-const modal = document.querySelector("#modal");
-const modalBody = document.querySelector("#modal-body");
-const closeModal = document.querySelector("#close-modal");
+const filter = document.querySelector("#genreFilter");
 
 async function loadGames() {
     try {
         const response = await fetch("data/games.json");
         const games = await response.json();
 
-        const cards = games.map(game => `
-            <div class="card">
-                <img src="${game.image}" alt="${game.title} cover" loading="lazy">
-                <h3>${game.title}</h3>
-                <p>${game.genre} | ${game.platform}</p>
-                <p>Status: ${game.status}</p>
-                <button data-id="${game.id}">View Details</button>
-            </div>
-        `).join("");
+        populateFilter(games);
+        renderGames(games);
 
-        container.innerHTML = cards;
-
-        document.querySelectorAll("button[data-id]").forEach(btn => {
-            btn.addEventListener("click", () => {
-                const selected = games.find(g => g.id == btn.dataset.id);
-
-                modalBody.innerHTML = `
-                    <h2>${selected.title}</h2>
-                    <p><strong>Genre:</strong> ${selected.genre}</p>
-                    <p><strong>Platform:</strong> ${selected.platform}</p>
-                    <p><strong>Status:</strong> ${selected.status}</p>
-                    <p>${selected.description}</p>
-                `;
-
-                modal.style.display = "flex";
-                modal.setAttribute("aria-hidden", "false");
-                localStorage.setItem("lastViewedGame", selected.title);
-            });
+        filter.addEventListener("change", () => {
+            const value = filter.value;
+            if (value === "all") {
+                renderGames(games);
+            } else {
+                const filtered = games.filter(game => game.genre === value);
+                renderGames(filtered);
+            }
         });
 
     } catch (error) {
@@ -43,15 +24,33 @@ async function loadGames() {
     }
 }
 
-closeModal.addEventListener("click", () => {
-    modal.style.display = "none";
-    modal.setAttribute("aria-hidden", "true");
-});
+function populateFilter(games) {
+    const genres = [...new Set(games.map(game => game.genre))];
 
-window.addEventListener("keydown", e => {
-    if (e.key === "Escape") {
-        modal.style.display = "none";
-    }
-});
+    genres.forEach(genre => {
+        const option = document.createElement("option");
+        option.value = genre;
+        option.textContent = genre;
+        filter.appendChild(option);
+    });
+}
+
+function renderGames(games) {
+    container.innerHTML = games.map(game => `
+        <div class="card reveal">
+            <img src="${game.image}" alt="${game.title}" loading="lazy">
+            <div class="card-title">
+                <h3>${game.title}</h3>
+                <p>${game.genre} | ${game.platform}</p>
+                <p>Status: ${game.status}</p>
+            </div>
+            <div class="buttons-container">
+                <button data-title="${game.title}" class="view-details-btn">🔍 View Details</button>
+                <button data-title="${game.title}" class="favorite-btn">❤ Favorite</button>
+            </div>
+
+        </div>
+    `).join("");
+}
 
 loadGames();

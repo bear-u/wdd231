@@ -1,55 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NovaForge Games | Independent Game Studio</title>
-<meta name="description" content="NovaForge Games is an independent game development studio crafting immersive and innovative digital experiences.">
-<meta name="author" content="NovaForge Games">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NovaForge Games – Crafting immersive, player-first experiences with precision and passion." />
+    <meta name="keywords" content="indie games, game studio, video games, NovaForge, game development" />
+    <meta name="author" content="NovaForge Games" />
+    <title>NovaForge Games</title>
 
-<meta property="og:title" content="NovaForge Games">
-<meta property="og:description" content="Crafting immersive digital experiences.">
-<meta property="og:type" content="website">
+    <!-- Open Graph -->
+    <meta property="og:title" content="NovaForge Games" />
+    <meta property="og:description" content="Crafting immersive player-first experiences." />
+    <meta property="og:image" content="images/hero.jpg" />
 
-<link rel="icon" href="images/favicon.ico">
-<link rel="stylesheet" href="css/styles.css">
-<script type="module" src="js/main.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&family=Clash+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Scripts --> 
+    <script src="js/main.js" defer></script>
+    <script src="js/games.js" defer></script>
+    <script src="js/theme.js" defer></script>
 </head>
 
 <body>
 <header>
-    <div class="logo">NovaForge Games</div>
-    <button id="menu-toggle" aria-label="Open navigation menu">&#9776;</button>
-    <nav id="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="games.html">Games</a>
-        <a href="contact.html">Contact</a>
+    <nav class="navbar">
+    <div class="logo">NovaForge</div>
+
+    <div class="nav-right">
+        <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button id="themeToggle" class="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
     </nav>
 </header>
 
 <main>
-<section class="hero">
-    <img src="images/hero.webp" alt="NovaForge Games - Forging New Worlds" class="hero-image">
-    <h1>Forging New Worlds</h1>
-    <p>We craft immersive and innovative digital experiences for players everywhere.</p>
-    <a href="games.html" class="btn">Explore Our Games</a>
-</section>
+    <section class="hero">
+    <div class="hero-content">
+        <h1>Building Worlds Worth Exploring</h1>
+        <p>
+        NovaForge Games creates immersive, emotionally resonant experiences
+        designed with intention, precision, and heart.
+        </p>
+        <a href="games.html" class="cta">Explore Our Games</a>
+    </div>
+    </section>
 
-<section class="about">
-    <h2>About NovaForge</h2>
-    <p>NovaForge Games is an independent development studio focused on creating engaging, visually rich, and thoughtfully designed experiences. Our mission is to build games that inspire curiosity and reward exploration.</p>
-</section>
-</main>
+    <section class="about">
+        <h2>About NovaForge</h2>
+        <p>NovaForge Games is an independent development studio focused on creating engaging, visually rich, and thoughtfully designed experiences. Our mission is to build games that inspire curiosity and reward exploration.</p>
+    </section>
+    <section class="featured">
+        <h2>Featured Titles</h2>
+        <div id="featured-container" class="grid"></div>
+    </section>
 
-<footer>
-    <p>&copy; 2026 NovaForge Games</p>
-    <a href="attributions.html">Attributions</a>
-    <a href="https://youtube.com/" target="_blank">Project Video</a>
-</footer>
+    <section class="values">
+        <h2>Our Philosophy</h2>
+        <div class="values-grid">
+            <div>
+                <h3>Player First</h3>
+                <p>Every mechanic, system, and narrative decision is designed around meaningful player experience.</p>
+            </div>
+            <div>
+                <h3>Intentional Design</h3>
+                <p>We value clarity, balance, and purposeful interaction over noise and excess.</p>
+            </div>
+            <div>
+                <h3>Technical Craft</h3>
+                <p>We approach development as engineering art — structured, optimized, and thoughtful.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <h2>How We Build</h2>
+        <p>From concept prototyping to iterative refinement, NovaForge blends creativity with disciplined development. We test early, refine often, and polish deliberately.</p>
+    </section>
+
+    <section class="cta">
+        <h2>Join the Journey</h2>
+        <p>Follow our development updates and be part of the NovaForge community.</p>
+        <a href="contact.html" class="btn">Connect With Us</a>
+    </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaForge Games</p>
+        <a href="attributions.html">Attributions</a>
+        <a href="https://youtube.com/" target="_blank">Project Video</a>
+    </footer>
+    <canvas id="particles"></canvas>
 </body>
 </html>
