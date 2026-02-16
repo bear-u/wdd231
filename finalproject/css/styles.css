@@ -3,6 +3,7 @@
   --text: #111111;
   --card: #f4f4f4;
   --accent: #5c6cff;
+  --button-bg: #2433be;
   --shadow: rgba(255, 255, 255, 0.06);
 }
 
@@ -36,6 +37,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+#logo-text {
+    color: var(--accent);
 }
 
 .logo {
@@ -150,6 +155,15 @@ header {
   z-index: 0;
 }
 
+.hero-image {
+  animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
 .hero::after {
   content: "";
   position: absolute;
@@ -175,10 +189,11 @@ header {
   margin-top: 20px;
   padding: 12px 26px;
   background: var(--accent);
-  color: white;
+  background-size: contain;
+  color: var(--text);
+  text-align: center;
   border-radius: 40px;
   text-decoration: none;
-  box-shadow: 0 8px 20px var(--shadow);
 }
 
 @keyframes fadeUp {
@@ -190,6 +205,40 @@ header {
   transform: translateY(-4px);
   box-shadow: 0 10px 30px var(--shadow);
 }
+
+.cta-section {
+  width: 80%;
+  padding: 80px 8%;
+  background: linear-gradient(
+      to right,
+      rgba(92, 108, 255, 0.15),
+      transparent
+  );
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 30px;
+  background: var(--accent);
+  color: var(--bg);
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
 
 .btn {
     padding: 0.9rem 1.8rem;
@@ -482,3 +531,19 @@ footer {
     }
 }
 
+.buttons-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 10%;
+}
+
+.buttons-container button {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 30px;
+    border: none;
+    background: var(--accent);
+    color: var(--card);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
